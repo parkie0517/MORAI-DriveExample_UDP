@@ -29,7 +29,7 @@ Install packages which basically need
 ```
 $ git clone https://github.com/MORAI-Autonomous/MORAI-DriveExample_UDP.git
 $ cd MORAI-DriveExample_UDP
-$ git submodule update --init --recursive
+$ git submodule update --init --recursive # this doesn't work
 $ find -name 'requirements.txt' | xargs -L 1 sudo pip install -U -r
 ```
 
