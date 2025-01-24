@@ -1,5 +1,3 @@
-[![MORAILog](./docs/MORAI_Logo.png)](https://www.morai.ai)
-===
 # MORAI - Drive example (UDP)
 
 First step to enjoy the `MORAI Sim: Drive` with UDP.
