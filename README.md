@@ -29,7 +29,7 @@ Install packages which basically need
 ```
 $ git clone https://github.com/MORAI-Autonomous/MORAI-DriveExample_UDP.git
 $ cd MORAI-DriveExample_UDP
-$ git submodule update --init --recursive # this doesn't work
+$ git submodule update --init --recursive # this works as of 11th of feb
 $ find -name 'requirements.txt' | xargs -L 1 sudo pip install -U -r
 ```
 
@@ -37,6 +37,7 @@ $ find -name 'requirements.txt' | xargs -L 1 sudo pip install -U -r
 
 Enjoy the example which follow the trajectory with smart cruise control.
 ```
+$ conda activate moari_udp
 $ python ./main.py
 ```
 

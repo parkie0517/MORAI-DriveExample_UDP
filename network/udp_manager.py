@@ -44,13 +44,13 @@ class UdpManager:
         self.traffic_light_sender = TrafficLightSender(network['user_ip'], network['set_traffic_host_port'])
 
         # receiver
-        self.ego_info_receiver = EgoInfoReceiver(
+        self.ego_info_receiver = EgoInfoReceiver( # 현 위치 받는 모듈
             network['host_ip'], network['ego_info_dst_port'], self._ego_info_callback
         )
-        self.object_info_receiver = ObjectInfoReceiver(
+        self.object_info_receiver = ObjectInfoReceiver( # 객체 정보 받는 모듈
             network['host_ip'], network['object_info_dst_port'], self._object_info_callback
         )
-        self.traffic_light_receiver = TrafficLightReceiver(
+        self.traffic_light_receiver = TrafficLightReceiver( # 교통 정보 받는 모듈
             network['host_ip'], network['get_traffic_dst_port'], self._traffic_light_callback
         )
 
